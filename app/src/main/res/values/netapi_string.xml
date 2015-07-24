@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--付费账单列表数据接口-->
+    <string name="getMobileDataList">http://172.16.1.156/api/orderNumQuery/getMobileDataList</string>
+    <!-- 校验登录账户 -->
+    <string name="ValidateUserCode_URI">http://172.16.1.156:8082/api/oauthapi/ValidateUserCode</string>
+    <!-- 登陆账户 -->
+    <string name="AccessToken_URI">http://172.16.1.156:8082/api/oauthapi/AccessToken</string>
+</resources>

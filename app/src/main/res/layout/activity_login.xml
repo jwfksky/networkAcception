@@ -1,0 +1,155 @@
+<me.dreamheart.autoscalinglayout.ASFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/progress"
+    android:gravity="center"
+    custom:designHeight="615dp"
+    custom:designWidth="384dp"
+
+    >
+
+    <ProgressBar
+        android:id="@+id/login_loading"
+        style="@style/ProgressBarBig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_15"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:src="@drawable/login_ids"/>
+
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height_35"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_15"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/text_userName"
+                android:textColor="@color/lightslategrey"
+                android:textSize="@dimen/text_16"
+                />
+
+            <View
+                android:layout_width="@dimen/width_1"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="#dddddd"/>
+
+            <EditText
+                android:id="@+id/login_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_weight="4"
+                android:background="@drawable/edittext_bg"
+                android:gravity="center"
+                android:maxLength="40"
+                android:inputType="text"
+                android:text=""
+                android:textColor="@color/lightslategrey"
+                android:textSize="@dimen/text_16"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height_35"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_15"
+            android:layout_marginLeft="@dimen/margin_15"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/text_pwd"
+                android:textColor="@color/lightslategrey"
+                android:textSize="@dimen/text_16"
+                />
+
+            <View
+                android:layout_width="@dimen/width_1"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="#dddddd"/>
+
+            <EditText
+                android:id="@+id/login_pwd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_weight="4"
+                android:background="@drawable/edittext_bg"
+                android:gravity="center"
+                android:maxLength="40"
+                android:text=""
+                android:inputType="textPassword"
+                android:textColor="@color/lightslategrey"
+                android:textSize="@dimen/text_16"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20" >
+
+            <CheckBox
+                android:id="@+id/rememberPwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:checked="true"
+                android:textColor="@color/lightslategrey"
+                android:text="@string/text_remenberPwd"
+                android:textSize="@dimen/text_16" />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/login_submit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg"
+            android:layout_margin="@dimen/margin_15"
+            android:elevation="5dp"
+            android:text="@string/submit_ok"/>
+    </LinearLayout>
+</me.dreamheart.autoscalinglayout.ASFrameLayout>

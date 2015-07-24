@@ -1,0 +1,20 @@
+<me.dreamheart.autoscalinglayout.ASRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_page"
+    custom:designHeight="615dp"
+    custom:designWidth="384dp"
+    >
+
+    <FrameLayout
+        android:id="@+id/main_fl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+
+
+</me.dreamheart.autoscalinglayout.ASRelativeLayout>

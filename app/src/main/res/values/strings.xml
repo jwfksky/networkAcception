@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">网上受理平台</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="category_game">游戏</string>
+    <string name="category_app">应用</string>
+    <string name="recommend_toast">您选择的关键词是：</string>
+    <string name="load_more">加载中...</string>
+    <string name="load_error">加载失败,点击重试</string>
+    <string name="app_detail">应用详情</string>
+    <string name="app_detail_download">下载：</string>
+    <string name="app_detail_version">版本：</string>
+    <string name="app_detail_date">时间：</string>
+    <string name="app_detail_size">大小：</string>
+    <string name="app_detail_introduction">简介</string>
+    <string name="app_detail_author">作者：</string>
+    <string name="app_state_download">下载</string>
+    <string name="app_state_paused">暂停</string>
+    <string name="app_state_error">失败</string>
+    <string name="app_state_waiting">等待</string>
+    <string name="app_state_downloaded">安装</string>
+    <string name="bottom_favorites">收藏</string>
+    <string name="bottom_share">分享</string>
+    <string name="tv_home">首页</string>
+    <string name="tv_setting">设置</string>
+    <string name="tv_theme">主题</string>
+    <string name="tv_scans">安装包管理</string>
+    <string name="tv_feedback">反馈</string>
+    <string name="tv_updates">检查更新</string>
+    <string name="tv_about">关于</string>
+    <string name="tv_exit">退出</string>
+    <string name="tv_user_name">未知</string>
+    <string name="tv_user_email">unknown@gmail.com</string>
+
+    <!--zxing-->
+    <string name="viewfinderview_status_text1">将二维码/条码放入取景框内</string>
+    <string name="viewfinderview_status_text2">即可自动扫描</string>
+    <string name="msg_camera_framework_bug">对不起，系统照相设备出现问题，请重新手机尝试</string>
+    <string name="button_ok">OK</string>
+    <string name="preferences_front_light_auto">Automatic</string>
+    <string name="preferences_front_light_off">Off</string>
+    <string name="preferences_front_light_on">On</string>
+    <string name="submit_ok">确定</string>
+    <!--  -->
+    <string name="unCheckBill">未付费账单查询</string>
+    <string name="CheckedBill">已付费账单查询</string>
+    <!-- 网络请求返回配置 -->
+    <string name="HttpResult">result</string>
+    <string name="HttpResult_msg">msg</string>
+    <string name="HttpResult_OK">0</string>
+    <string name="HttpResult_NO">-1</string>
+    <!-- Http协议请求状态码返回对应的JSON数据 -->
+    <string name="HTTP_STATUSCODE_400_JSON">400表示调用发生错误。返回的Http消息中会包含详细的错误提示。</string>
+    <string name="HTTP_STATUSCODE_401_JSON">请先登录，谢谢。</string>
+    <string name="HTTP_STATUSCODE_500_JSON">服务器异常，请联系客服人员。</string>
+    <string name="HTTP_STATUSCODE_2000_JSON">您不是激活用户，请先激活，谢谢。</string>
+    <string name="HTTP_STATUSCODE_2001_JSON">登录成功，您访问此功能的权限不足，谢谢。</string>
+    <string name="HTTP_STATUSCODE_2002_JSON">您的APP没通过验证，请先验证或者更新最新版本，谢谢。</string>
+    <string name="HTTP_NoNetwork">无网络连接，请打开手机的网络。</string>
+    <string name="network_error">对不起，网络访问出错！</string>
+    <string name="check_params_error">输入为空或格式不正确</string>
+    <string name="load">loading...</string>
+    <string name="text_startTime">开始时间</string>
+    <string name="text_endTime">结束时间</string>
+    <string name="text_queryKey">查询条件</string>
+    <string name="search_queryKey">请输入受理号/提单号/客户代码</string>
+    <string name="text_planTime">计划时间</string>
+    <string name="text_pwd">密码</string>
+    <string name="text_userName">用户名</string>
+    <string name="text_remenberPwd">记住密码</string>
+</resources>

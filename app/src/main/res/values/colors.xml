@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="default_green_dark1">#ffeeeeee</color>
+    <color name="default_green_dark2">#eeffffff</color>
+    <color name="lightslategrey">#778899</color>
+    <!--green-->
+    <color name="default_green_dark">#ff1920ff</color>
+    <color name="default_green_light">#ff8592ff</color>
+    <!--yellow-->
+    <color name="default_yellow_dark">#fffff11b</color>
+    <color name="default_yellow_light">#fffffe89</color>
+    <!--blue-->
+    <color name="bg_tab_pressed">#6633b5e5</color>
+    <color name="bg_tab_pressed2">#ff3898ff</color> <!-- 蓝色 -->
+    <color name="progress">#0294f0</color>
+
+    <!--white dark-->
+    <color name="bg_window">#ffe5e5e5</color>
+    <color name="bg_page">#ffebebeb</color>
+    <color name="menu_bg_normal">#f0f1f3</color>
+    <color name="menu_bg_press">#cecece</color>
+    <color name="txt_title">#ff333333</color>
+    <color name="detail_screen_bg">#adadad</color>
+    <color name="txt_small">#ff7a7a7a</color>
+    <color name="txt_big">#ff717171</color>
+    <color name="item_divider">#ffd7d7d7</color>
+    <!--zxing-->
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+
+
+</resources>

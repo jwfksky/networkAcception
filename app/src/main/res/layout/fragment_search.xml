@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_35"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/text_queryKey"
+            android:textColor="@color/lightslategrey"
+            android:textSize="@dimen/text_16"
+            />
+
+        <View
+            android:layout_width="@dimen/width_1"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_5"
+
+            android:background="#dddddd"/>
+
+        <EditText
+            android:id="@+id/search_queryKey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_weight="3"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="@string/search_queryKey"
+            android:inputType="number"
+            android:maxLength="40"
+            android:textColor="@color/lightslategrey"
+            android:textColorHint="@color/lightslategrey"
+            android:textSize="@dimen/text_16"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_1"
+        style="@style/separateLine"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_35"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/text_startTime"
+            android:textColor="@color/lightslategrey"
+            android:textSize="@dimen/text_16"
+            />
+
+        <View
+            android:layout_width="@dimen/width_1"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="#dddddd"/>
+
+        <TextView
+            android:id="@+id/search_startTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_weight="3"
+            android:background="@null"
+            android:gravity="center"
+            android:maxLength="40"
+            android:textColor="@color/lightslategrey"
+            android:textSize="@dimen/text_16"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_1"
+        style="@style/separateLine"
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_35"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/text_endTime"
+            android:textColor="@color/lightslategrey"
+            android:textSize="@dimen/text_16"
+            />
+
+        <View
+            android:layout_width="@dimen/width_1"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="#dddddd"/>
+
+        <TextView
+            android:id="@+id/search_endTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_weight="3"
+            android:background="@null"
+            android:gravity="center"
+            android:maxLength="40"
+            android:text=""
+            android:textColor="@color/lightslategrey"
+            android:textSize="@dimen/text_16"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_1"
+        style="@style/separateLine"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_35"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/text_planTime"
+            android:textColor="@color/lightslategrey"
+            android:textSize="@dimen/text_16"
+            />
+
+        <View
+            android:layout_width="@dimen/width_1"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="#dddddd"/>
+
+        <Spinner
+            android:id="@+id/search_planTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_weight="3"
+            android:background="@null"
+            android:gravity="center|center_horizontal"
+            android:maxLength="40"
+            android:text="aa"
+            android:textColor="@color/lightslategrey"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_1"
+        style="@style/separateLine"
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/submit_uncheck"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:layout_weight="1"
+            android:text="@string/unCheckBill"
+            android:textSize="@dimen/text_16"/>
+
+        <Button
+            android:id="@+id/submit_checked"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:layout_weight="1"
+            android:text="@string/CheckedBill"
+            android:textSize="@dimen/text_16"/>
+    </LinearLayout>
+</LinearLayout>

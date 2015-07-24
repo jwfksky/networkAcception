@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <store.yifan.cn.networkacception.ui.widget.LoadRefreshLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/swipe">
+
+        <ListView
+            android:id="@+id/bill_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+    </store.yifan.cn.networkacception.ui.widget.LoadRefreshLayout>
+
+</RelativeLayout>
