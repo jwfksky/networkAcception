@@ -25,6 +25,7 @@ import store.yifan.cn.networkacception.http.protocol.PasswordSaltProtocol;
 import store.yifan.cn.networkacception.manager.BaseApplication;
 import store.yifan.cn.networkacception.manager.Constants;
 import store.yifan.cn.networkacception.ui.widget.LoadingPage;
+import store.yifan.cn.networkacception.utils.LogUtils;
 import store.yifan.cn.networkacception.utils.UIUtils;
 import store.yifan.cn.networkacception.utils.encrypt.Base64;
 import store.yifan.cn.networkacception.utils.encrypt.DigestUtils;
@@ -60,10 +61,10 @@ public class LoginActivity extends BaseActivity {
     }
 
     private void operateData() {
-        sp=getSharedPreferences("config",MODE_PRIVATE);
-        String name=sp.getString("name","");
-        String pwd=sp.getString("pwd","");
-        if(!TextUtils.isEmpty(name)&&!TextUtils.isEmpty(name)){
+        sp = getSharedPreferences("config", MODE_PRIVATE);
+        String name = sp.getString("name", "");
+        String pwd = sp.getString("pwd", "");
+        if (!TextUtils.isEmpty(name) && !TextUtils.isEmpty(name)) {
             mLoginName.setText(name);
             mLoginPwd.setText(pwd);
         }
@@ -98,28 +99,28 @@ public class LoginActivity extends BaseActivity {
         @Override
         protected String doInBackground(String... params) {
             try {
-                if (TextUtils.isEmpty(BaseApplication.getAcceptToken())) {
-                    Constants.USER_NAME = mLoginName.getText().toString().trim();
-                    BaseProtocol<HashMap<String, String>> passwordSalt = new PasswordSaltProtocol();
-                    HashMap<String, String> map = passwordSalt.load(UIUtils.getString(R.string.ValidateUserCode_URI), BaseProtocol.POST);
-                    if (map == null) {
-                        UIUtils.showToastSafe(UIUtils.getString(R.string.network_error));
-                    }
-                    String newPwd = mLoginPwd.getText().toString().trim() + map.get("salt");
-
-                    byte[] hashPwd = DigestUtils.encodeSHA512(newPwd
-                            .getBytes("utf-8"));
-                    String encryptedPWD = Base64.encodeBytes(hashPwd);
-
-                    byte[] keyHash = Hmac.encodeHmacSHA512(
-                            map.get("key").getBytes("utf-8"),
-                            encryptedPWD.getBytes("utf-8"));
-                    String encryptedKey = Base64.encodeBytes(keyHash);
-                    return encryptedKey;
+                BaseApplication.setAcceptToken("");
+                Constants.USER_NAME = mLoginName.getText().toString().trim();
+                BaseProtocol<HashMap<String, String>> passwordSalt = new PasswordSaltProtocol();
+                HashMap<String, String> map = passwordSalt.load(UIUtils.getString(R.string.ValidateUserCode_URI), BaseProtocol.POST);
+                if (map == null) {
+                    UIUtils.showToastSafe(UIUtils.getString(R.string.network_error));
                 }
+                String newPwd = mLoginPwd.getText().toString().trim() + map.get("salt");
+
+                byte[] hashPwd = DigestUtils.encodeSHA512(newPwd
+                        .getBytes("utf-8"));
+                String encryptedPWD = Base64.encodeBytes(hashPwd);
+
+                byte[] keyHash = Hmac.encodeHmacSHA512(
+                        map.get("key").getBytes("utf-8"),
+                        encryptedPWD.getBytes("utf-8"));
+                String encryptedKey = Base64.encodeBytes(keyHash);
+                return encryptedKey;
+
 
             } catch (Exception e) {
-                e.printStackTrace();
+                LogUtils.e(e);
             }
             return null;
         }
@@ -149,14 +150,14 @@ public class LoginActivity extends BaseActivity {
             if (map == null) {
                 UIUtils.showToastSafe(getString(R.string.network_error));
             } else if ("0".equals(map.get("Result"))) {
-                if(sp!=null){
-                    SharedPreferences.Editor editor=sp.edit();
-                    if(mRemeberPwd.isChecked()){
-                        editor.putString("name",mLoginName.getText().toString().trim());
-                        editor.putString("pwd",mLoginPwd.getText().toString().trim());
-                    }else{
-                        editor.putString("name","");
-                        editor.putString("pwd","");
+                if (sp != null) {
+                    SharedPreferences.Editor editor = sp.edit();
+                    if (mRemeberPwd.isChecked()) {
+                        editor.putString("name", mLoginName.getText().toString().trim());
+                        editor.putString("pwd", mLoginPwd.getText().toString().trim());
+                    } else {
+                        editor.putString("name", "");
+                        editor.putString("pwd", "");
                     }
                     editor.commit();
                 }

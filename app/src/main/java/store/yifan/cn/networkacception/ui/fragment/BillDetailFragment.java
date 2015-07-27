@@ -47,12 +47,18 @@ public class BillDetailFragment extends BaseFragment {
     }
 
     private void initView() {
-        Bundle bundle=getArguments();
-        BillBean bean=bundle.getParcelable("bean");
-        if(bean!=null){
+        Bundle bundle = getArguments();
+        BillBean bean = bundle.getParcelable("bean");
+        if (bean != null) {
+            double amout = bean.getTOTAL_AMOUNT();
+            if (amout == 0D) {
+                mSubmitBtnDetail.setVisibility(View.GONE);
+            } else {
+                mSubmitBtnDetail.setVisibility(View.VISIBLE);
+            }
             mOrderNumTvDetail.setText(bean.getBILL_NUM());
             mPlanIdTvDetail.setText(bean.getBILL_NUM());
-            mMoneyTvDetail.setText(String.valueOf(bean.getTOTAL_AMOUNT()));
+            mMoneyTvDetail.setText(String.valueOf(amout));
             mSubmitTimeDetail.setText(bean.getPAYED_AT());
         }
     }
