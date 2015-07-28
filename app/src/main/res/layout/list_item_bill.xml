@@ -21,10 +21,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 style="@style/txtDefaultStyle"
-                android:text="订单号"/>
+                android:text="提单号"/>
 
             <TextView
                 android:id="@+id/orderNum_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtDefaultStyle"
+                android:text="无"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtDefaultStyle"
+                android:text="作业方式"/>
+
+            <TextView
+                android:id="@+id/opMode_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 style="@style/txtDefaultStyle"
@@ -50,7 +63,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 style="@style/txtDefaultStyle"
-                android:text="计划状态"/>
+                android:text="付费状态"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -78,7 +91,7 @@
                 />
 
             <TextView
-                android:id="@+id/planStatus_tv"
+                android:id="@+id/payStatus_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 style="@style/txtDefaultStyle"

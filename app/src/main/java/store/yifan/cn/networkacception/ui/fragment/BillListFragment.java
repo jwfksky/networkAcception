@@ -47,7 +47,6 @@ public class BillListFragment extends BaseFragment {
     @InjectView(R.id.swipe)
     LoadRefreshLayout swipe;
     private List<BillBean> billList = new ArrayList<>();
-    private List<BillBean> tempList = new ArrayList<>();
     private List<BillBean> currentList;
     private MyTestAdapter adapter;
 
@@ -56,8 +55,6 @@ public class BillListFragment extends BaseFragment {
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
-            /*billList.clear();
-            billList.addAll(tempList);*/
             if (swipe != null && adapter != null) {
                 swipe.setRefreshing(false);
                 swipe.setLoading(false);
@@ -183,11 +180,16 @@ public class BillListFragment extends BaseFragment {
                 BillBean bill = billList.get(position);
                 viewHolder.mMoneyTv.setText(String.valueOf(bill.getTOTAL_AMOUNT()));
                 viewHolder.mOrderNumTv.setText(bill.getBILL_NUM());
-                viewHolder.mPlanBeginTimeTv.setText(bill.getPLANED_AT());
-                viewHolder.mPlanEndTimeTv.setText(bill.getPLANED_AT());
-                viewHolder.mPlanIdTv.setText(bill.getBILL_NUM());
-                viewHolder.mPlanStatusTv.setText("No");
-                viewHolder.mSubmitTimeTv.setText(bill.getPLANED_AT());
+                viewHolder.mPlanBeginTimeTv.setText("");
+                viewHolder.mPlanEndTimeTv.setText("");
+                viewHolder.mPlanIdTv.setText(bill.getPLAN_NUM()+"");
+                if(bill.getPAYED_AT()==null){
+                    viewHolder.mPayStatusTv.setText("No");
+                }else{
+                    viewHolder.mPayStatusTv.setText("Yes");
+                }
+                viewHolder.mOpModeTv.setText(bill.getOP_MODE_NAME());
+                viewHolder.mSubmitTimeTv.setText(bill.getPAYED_AT());
             }
 
 
@@ -210,15 +212,16 @@ public class BillListFragment extends BaseFragment {
         TextView mPlanIdTv;
         @InjectView(R.id.submitTime_tv)
         TextView mSubmitTimeTv;
-        @InjectView(R.id.planStatus_tv)
-        TextView mPlanStatusTv;
+        @InjectView(R.id.payStatus_tv)
+        TextView mPayStatusTv;
         @InjectView(R.id.money_tv)
         TextView mMoneyTv;
         @InjectView(R.id.planBeginTime_tv)
         TextView mPlanBeginTimeTv;
         @InjectView(R.id.planEndTime_tv)
         TextView mPlanEndTimeTv;
-
+        @InjectView(R.id.opMode_tv)
+        TextView mOpModeTv;
         ViewHolder(View view) {
             ButterKnife.inject(this, view);
         }

@@ -1,4 +1,4 @@
-<me.dreamheart.autoscalinglayout.ASFrameLayout
+<store.yifan.cn.networkacception.opensource.autoscale.dreamheart.autoscalinglayout.ASFrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:custom="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -152,4 +152,4 @@
             android:elevation="5dp"
             android:text="@string/submit_ok"/>
     </LinearLayout>
-</me.dreamheart.autoscalinglayout.ASFrameLayout>
+</store.yifan.cn.networkacception.opensource.autoscale.dreamheart.autoscalinglayout.ASFrameLayout>

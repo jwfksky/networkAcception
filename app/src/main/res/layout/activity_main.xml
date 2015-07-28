@@ -1,4 +1,4 @@
-<me.dreamheart.autoscalinglayout.ASRelativeLayout
+<store.yifan.cn.networkacception.opensource.autoscale.dreamheart.autoscalinglayout.ASRelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:custom="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -17,4 +17,4 @@
         />
 
 
-</me.dreamheart.autoscalinglayout.ASRelativeLayout>
+</store.yifan.cn.networkacception.opensource.autoscale.dreamheart.autoscalinglayout.ASRelativeLayout>

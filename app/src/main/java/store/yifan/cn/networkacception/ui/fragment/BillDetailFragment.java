@@ -57,7 +57,7 @@ public class BillDetailFragment extends BaseFragment {
                 mSubmitBtnDetail.setVisibility(View.VISIBLE);
             }
             mOrderNumTvDetail.setText(bean.getBILL_NUM());
-            mPlanIdTvDetail.setText(bean.getBILL_NUM());
+            mPlanIdTvDetail.setText(bean.getPLAN_NUM()+"");
             mMoneyTvDetail.setText(String.valueOf(amout));
             mSubmitTimeDetail.setText(bean.getPAYED_AT());
         }

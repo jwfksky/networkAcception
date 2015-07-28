@@ -25,7 +25,7 @@ public class BillBean implements Parcelable {
     private String PAY_NUM;//支付号
     private String I_VESSEL_VOYAGE;//进场船名&航次
     private double TOTAL_AMOUNT;//金额
-    private int PLAN_NUM;//受理号
+    private int PLAN_NUM;//受理计划号
     private String PLANED_AT;//计划时间
 
     public void setTER_CODE(String TER_CODE) {

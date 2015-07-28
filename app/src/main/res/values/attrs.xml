@@ -15,5 +15,10 @@
     <declare-styleable name="RatioLayout">
         <attr name="ratio" format="float" />
     </declare-styleable>
+    <declare-styleable name="AutoScalingLayout">
+        <attr name="designWidth" format="dimension" />
+        <attr name="designHeight" format="dimension" />
+        <attr name="autoScaleEnable" format="boolean" />
+    </declare-styleable>
 
 </resources>

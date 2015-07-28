@@ -95,7 +95,7 @@ public class MainActivity extends BaseActivity implements SearchBillFragment.OnS
             bundle.putString("params", str);
             baseFragment.setArguments(bundle);
             fx = fm.beginTransaction();
-            fx.add(R.id.main_fl, baseFragment, "BillList");
+            fx.replace(R.id.main_fl, baseFragment, "BillList");
             fx.addToBackStack(null);
             fx.commit();
         }

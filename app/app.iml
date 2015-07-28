@@ -95,7 +95,6 @@
     <orderEntry type="library" exported="" name="commons-codec-1.9" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-22.2.0" level="project" />
     <orderEntry type="library" exported="" name="core-3.0.0" level="project" />
-    <orderEntry type="library" exported="" name="AutoScalingLayout1.2-" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-22.2.0" level="project" />
   </component>
 </module>
